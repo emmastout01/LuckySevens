@@ -30,6 +30,11 @@ function playGame() {
         }
     }
     //Game over
+    // Set values of table data in HTML
+    document.getElementById("starting-bet-value").innerText = startingBet;
+    document.getElementById("total-rolls").innerText = numberOfRolls;
+    document.getElementById("highest-amount").innerText = highestAmountWon;
+    document.getElementById("rolls-at-highest").innerText = rollsAtHighest;
     return false;
 }
  
