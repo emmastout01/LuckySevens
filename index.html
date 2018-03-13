@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <title>Lucky Sevens</title>
+    <script src="logic.js"></script>
+</head>
+
+<body>
+    <h1>Lucky Sevens</h1>
+    <form name="luckySevens" onsubmit="return playGame()" onreset="resetForm();" class="form-inline">
+        <div>
+            <label for="startingBet">Starting Bet:</label>
+            $<input type="number" id="startingBet">
+        </div>
+        <br>
+        <button type="submit" id="submitButton" class="btn btn-default">Play Game!</button>
+
+
+        <div class="game-results">
+            <hr>
+            <table>
+                <thead>
+                    <tr>
+                        <td>Starting Bet</td>
+                        <td id="starting-bet-value">$xxxx</td>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td>Total Rolls Before Going Broke</td>
+                        <td id="total-rolls">xxxx</td>
+                    </tr>
+                    <tr>
+                        <td>Highest Amount Won</td>
+                        <td id="highest-amount">$xxxx</td>
+                    </tr>
+                    <tr>
+                        <td>Roll count at highest amount won</td>
+                        <td id="roll-count">xxxxx</td>
+                    </tr>
+                </tbody>
+            </table>
+        </div>
+    </form>
+</body>
+
+</html>
