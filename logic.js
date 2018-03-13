@@ -1,18 +1,26 @@
 function playGame() {
     // Get starting bet from user input
     var startingBet = document.forms['luckySevens']['startingBet'].value;
-    var gameMoney = 0;
     // Show an error if starting bet is 0 or a negative number
     if (startingBet <= 0) {
         alert('Error: Please enter a valid starting bet.')
     }
-    gameMoney = startingBet;
+
+    var gameMoney = Number(startingBet);
     if (gameMoney > 0) {
-        // Roll dice
+        var sumOfDice = rollDice();
+        if (sumOfDice === 7) {
+            gameMoney += 4;
+        }
+        else {
+            gameMoney -= 1;
+        }
+        console.log('game money: ', gameMoney );
 
     }
     //Game over
 
+ 
 
 
     function rollDice() {
@@ -21,8 +29,6 @@ function playGame() {
         console.log('sum of dice: ', die1 + die2 );
         return die1 + die2;
     }
-
-    rollDice();
 
     return false;
 }
