@@ -23,11 +23,7 @@ function playGame() {
         else {
             gameMoney -= 1;
         }
-       
-        console.log('game money: ', gameMoney );
-        console.log('highest: ', highestAmountWon );
-        console.log('rolls at highest: ', rollsAtHighest);
-        
+    
 
     }
     //Game over
