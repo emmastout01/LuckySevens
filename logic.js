@@ -35,6 +35,7 @@ function playGame() {
     document.getElementById("total-rolls").innerText = numberOfRolls;
     document.getElementById("highest-amount").innerText = '$' + highestAmountWon;
     document.getElementById("rolls-at-highest").innerText = rollsAtHighest;
+    document.getElementById("submitButton").innerText = 'Play Again';
     return false;
 }
  
