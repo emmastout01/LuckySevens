@@ -7,7 +7,7 @@ function playGame() {
     }
 
     var gameMoney = Number(startingBet);
-    if (gameMoney > 0) {
+    while (gameMoney > 0) {
         var sumOfDice = rollDice();
         if (sumOfDice === 7) {
             gameMoney += 4;
