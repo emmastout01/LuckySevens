@@ -8,7 +8,7 @@ function playGame() {
     // Set variables
     var gameMoney = Number(startingBet);
     var numberOfRolls = 0;
-    var highestAmountWon = 0;
+    var highestAmountWon = Number(startingBet);
     var rollsAtHighest = 0;
     // As long as there is game money, play the game
     while (gameMoney > 0) {
