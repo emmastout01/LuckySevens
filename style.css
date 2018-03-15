@@ -1,4 +1,8 @@
-
+.body {
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+}
 
 h1 {
     color: blue;
@@ -8,10 +12,23 @@ table {
     border-collapse: collapse;
 }
 
-td {
-   
-    border: 1px solid black;
+th {
+    background-color: rgb(106, 165, 107);
+    padding: 4px;
+}
+
+tbody tr:nth-child(even) {
+    background-color: rgb(193, 230, 182);
+  }
+  
+  tbody tr:nth-child(odd) {
+    background-color: rgb(125, 218, 153);
+  }
+
+td, th {
+    text-align: center;
+    padding: 2px;
+    border: 2px solid black;
     min-width:45px;
     margin: 0px;
-
 }
