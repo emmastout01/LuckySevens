@@ -3,7 +3,7 @@ function playGame() {
     var startingBet = document.forms['luckySevens']['startingBet'].value;
     // Show an error if starting bet is 0 or a negative number
     if (startingBet <= 0) {
-        alert('Error: Please enter a valid starting bet.')
+        alert('Error: Please enter a valid starting bet. Your bet may not be 0 or a negative value.')
     }
     // Set variables
     var gameMoney = Number(startingBet);
@@ -31,11 +31,13 @@ function playGame() {
     }
     //Game over
     // Set values of table data in HTML
-    document.getElementById("starting-bet-value").innerText = "$" + startingBet;
-    document.getElementById("total-rolls").innerText = numberOfRolls;
-    document.getElementById("highest-amount").innerText = '$' + highestAmountWon;
-    document.getElementById("rolls-at-highest").innerText = rollsAtHighest;
-    document.getElementById("submitButton").innerText = 'Play Again';
+    if (startingBet > 0) {
+        document.getElementById("starting-bet-value").innerText = "$" + startingBet;
+        document.getElementById("total-rolls").innerText = numberOfRolls;
+        document.getElementById("highest-amount").innerText = '$' + highestAmountWon;
+        document.getElementById("rolls-at-highest").innerText = rollsAtHighest;
+        document.getElementById("submitButton").innerText = 'Play Again!';
+    }
     return false;
 }
  
