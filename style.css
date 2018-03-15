@@ -1,0 +1,17 @@
+
+
+h1 {
+    color: blue;
+}
+
+table {
+    border-collapse: collapse;
+}
+
+td {
+   
+    border: 1px solid black;
+    min-width:45px;
+    margin: 0px;
+
+}
