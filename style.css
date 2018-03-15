@@ -4,8 +4,22 @@
     flex-direction: column;
 }
 
-h1 {
-    color: blue;
+.hr {
+    width: 40%;
+}
+
+input, button {
+    font-size: 15px;
+}
+
+.label {
+    font-size: 20px;
+}
+
+form {
+    display: flex;
+    align-items: center;
+    flex-direction: column;
 }
 
 table {
@@ -32,3 +46,4 @@ td, th {
     min-width:45px;
     margin: 0px;
 }
+
